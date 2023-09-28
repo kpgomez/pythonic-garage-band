@@ -125,6 +125,7 @@ def test_band_members(one_band):
 #@pytest.mark.skip("todo")
 def test_play_solos_for_whole_band(one_band):
     solos = one_band.play_solos()
+    print("this is what solos is", solos)
     assert len(solos) == 3
     assert solos[0] == "face melting guitar solo"
     assert solos[1] == "bom bom buh bom"
